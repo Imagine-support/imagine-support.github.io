@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<title>障がい児・者相談支援センター「いまじん」（京都市伏見区）｜社会福祉法人 世光福祉会</title>
+<meta name="description" content="京都市伏見区（醍醐支所管内を除く）の相談支援事業所です。障害福祉サービスを使うための計画相談支援・障害児相談支援のほか、地域生活支援拠点等のコーディネート事業・一人暮らし体験等事業を京都市から受託しています。社会福祉法人 世光福祉会。">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500&family=Cookie&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F4ED;          /* 本体サイトと同じ生成り */
+  --bg-2:#EEEBDD;
+  --line:#E2E1DB;
+  --text:#444;
+  --text-sub:#656566;
+  --lime:#BACE0C;        /* 本体サイトのアクセント */
+  --lime-dark:#94A40C;
+  --white:#fff;
+  --check:#FFF3B0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Noto Sans JP",メイリオ,Meiryo,"Hiragino Kaku Gothic Pro",sans-serif;
+  font-size:15px;line-height:2.3;letter-spacing:.1em;
+  /* 日本語を文節の切れ目で折り返す（Chrome・Edge）。行末に1〜2文字だけ残るのも防ぐ */
+  word-break:auto-phrase;text-wrap:pretty}
+a{color:inherit}
+/* iPhoneが数字を自動で電話番号のリンクにするのを打ち消す（電話は TEL のボタンだけ） */
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;pointer-events:none}
+img{max-width:100%}
+
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:10;background:rgba(245,244,237,.96);border-bottom:1px solid var(--line)}
+.head-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:10px 24px}
+.logo{text-decoration:none;line-height:1.4}
+.logo small{display:block;font-size:10px;letter-spacing:.15em;color:var(--text-sub)}
+.logo span{font-family:"Noto Serif JP",游明朝体,"Yu Mincho",serif;font-size:19px;font-weight:500;letter-spacing:.12em}
+nav ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,auto);column-gap:28px;row-gap:0}
+nav a{text-decoration:none;font-size:12px;line-height:2;display:inline-flex;align-items:center;gap:6px}
+nav a::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--lime)}
+nav a:hover{color:var(--lime-dark)}
+.menu-btn{display:none}
+
+/* メインビジュアル */
+/* 背景いっぱいに事業所の絵。左側は文字が読めるよう生成り色を重ねる */
+.hero{position:relative;min-height:560px;overflow:hidden;background:#E9E4CF url(images/hero.webp) 60% 45% / cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(245,244,237,.94) 0%,rgba(245,244,237,.82) 30%,rgba(245,244,237,.25) 58%,rgba(245,244,237,0) 75%)}
+.hero-in{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:90px 24px 70px}
+.hero .sub{font-family:"Noto Serif JP",serif;font-size:17px;margin:0 0 4px;letter-spacing:.2em}
+.hero h1{font-family:"Noto Serif JP",游明朝体,"Yu Mincho",serif;font-weight:400;font-size:72px;line-height:1.3;margin:0 0 28px -.5em;letter-spacing:.12em}
+.hero .copy{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.hero .copy span{background:var(--lime-dark);color:#fff;font-size:17px;padding:4px 16px;letter-spacing:.12em;line-height:1.9}
+
+/* セクション共通 */
+section{padding:90px 24px 20px}
+.wrap{max-width:1000px;margin:0 auto}
+.sec-title{text-align:center;margin:0 0 44px}
+.sec-title .en{display:block;font-family:Cookie,cursive;font-size:40px;color:var(--lime-dark);letter-spacing:0;line-height:1}
+.sec-title h2{font-size:18px;font-weight:500;letter-spacing:.2em;margin:4px 0 0}
+.lead{text-align:center;margin:0 auto 36px;max-width:44em;text-wrap:balance}
+.center-note{text-align:center;text-wrap:balance}
+/* 白い枠の中の文は、画面の幅に合わせてふつうに折り返す（文節で折り返すと右側に余白が出るため） */
+.box,.card,.flow li,.contact,.ask{word-break:normal;text-wrap:wrap}
+.box{background:var(--white);padding:32px 36px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.two.wide-right{grid-template-columns:2fr 3fr}
+h3{font-size:17px;font-weight:500;margin:0 0 10px;padding-left:14px;border-left:4px solid var(--lime);line-height:1.6}
+.kv{display:grid;grid-template-columns:max-content 1fr;border-top:1px solid var(--line);margin:0}
+.kv dt,.kv dd{margin:0;padding:14px 8px;border-bottom:1px solid var(--line);line-height:1.8}
+.kv dt{color:var(--text-sub);white-space:nowrap;padding-right:24px}
+.nb{display:inline-block}
+.area{font-size:20px;font-weight:500;text-align:center;margin:0 0 6px}
+
+/* 流れ */
+.flow{list-style:none;margin:0;padding:0;counter-reset:f}
+.flow li{counter-increment:f;position:relative;background:var(--white);padding:20px 24px 20px 84px;margin-bottom:14px;line-height:1.9}
+.flow li::before{content:counter(f);position:absolute;left:24px;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:var(--lime);color:#fff;font-weight:700;display:grid;place-items:center;letter-spacing:0;font-family:Oswald,"Noto Sans JP",sans-serif}
+.flow li:not(:last-child)::after{content:"";position:absolute;left:43px;bottom:-14px;width:2px;height:14px;background:var(--lime)}
+.flow b{font-weight:500;display:block;font-size:16px}
+.flow small{color:var(--text-sub);font-size:13px}
+
+/* カード・ボタン */
+.card{background:var(--white);padding:28px 30px;display:flex;flex-direction:column}
+.card p{margin:0 0 14px;line-height:1.95}
+.card .tag{align-self:flex-start;font-size:11px;background:var(--bg-2);padding:0 10px;margin-bottom:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-top:auto;background:var(--lime-dark);color:#fff;text-decoration:none;padding:8px 22px;font-size:14px;letter-spacing:.1em;transition:background .2s}
+.btn::after{content:"›";font-size:18px;line-height:1}
+.btn:hover{background:#7d8b0a}
+.btn.outline{background:transparent;color:var(--text);border:1px solid var(--text)}
+.btn.outline:hover{background:var(--text);color:#fff}
+
+.room{margin-top:6px;padding:16px 18px;background:var(--bg);display:flex;flex-direction:column;gap:10px}
+.room p{margin:0;font-size:14px;line-height:1.85}
+.room .btn{margin-top:0}
+
+/* お問い合わせ */
+.contact{background:var(--white);padding:40px 44px}
+.contact-name{text-align:center;font-family:"Noto Serif JP",serif;font-size:18px;margin:0 0 28px;line-height:1.6}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.contact-grid h3{margin-bottom:14px}
+.tel{font-family:Oswald,"Noto Sans JP",sans-serif;font-size:36px;letter-spacing:.06em;text-decoration:none;display:inline-block;line-height:1.2;margin:0 0 6px}
+.tel::before{content:"TEL ";font-size:16px;color:var(--lime-dark)}
+.line{margin:0;line-height:1.9}
+.line span{display:inline-block;min-width:3.6em;color:var(--text-sub);font-size:13px}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 16px;margin:18px 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.8}
+.hours dt{color:var(--text-sub)}
+.hours dd{margin:0}
+.hours .off{grid-column:1 / -1;color:var(--text-sub);font-size:13px}
+.addr{margin:0 0 14px;line-height:1.8}
+.access{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.7}
+.access li{display:grid;grid-template-columns:7.5em 1fr auto;gap:0 10px;padding:7px 0;border-bottom:1px dotted var(--line)}
+.access .rail{color:var(--text-sub);font-size:12px;align-self:center}
+.access .walk{color:var(--lime-dark);font-weight:500;white-space:nowrap}
+.notes{margin:16px 0 0;padding:12px 16px;background:var(--bg);font-size:13px;line-height:1.8;list-style:none}
+.notes li::before{content:"※"}
+.map{margin-top:32px;width:100%;height:320px;border:0;background:var(--bg-2);display:block}
+.dots{margin:0 0 14px;padding-left:1.2em;line-height:1.85}
+.dots li{margin-bottom:4px}
+.dots li::marker{color:var(--lime-dark)}
+.small{font-size:13px;color:var(--text-sub);line-height:1.8}
+
+footer{margin-top:100px;background:#444;color:#ddd;font-size:12px;line-height:2;padding:36px 24px;text-align:center}
+footer a{color:#fff}
+footer .org{font-size:14px;color:#fff;margin-bottom:6px}
+
+.to-top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;background:var(--lime);color:#fff;text-decoration:none;display:grid;place-items:center;font-size:11px;letter-spacing:.05em;font-family:Oswald,sans-serif}
+
+/* スマホ */
+@media (max-width:860px){
+  .head-in{padding:10px 16px}
+  .hours{grid-template-columns:1fr;gap:0}
+  .hours dd{margin-bottom:6px}
+  .menu-btn{display:block;background:var(--lime);border:0;color:#fff;font-size:12px;padding:8px 12px;letter-spacing:.1em;font-family:inherit}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px 18px}
+  nav.open{display:block}
+  nav ul{grid-template-columns:1fr 1fr;row-gap:4px}
+  nav a{font-size:14px}
+  .hero{min-height:480px;background-position:68% 50%}
+  .hero::before{background:linear-gradient(180deg,rgba(245,244,237,.9) 0%,rgba(245,244,237,.72) 55%,rgba(245,244,237,.15) 100%)}
+  .hero-in{padding:60px 16px 70px}
+  .hero h1{font-size:44px}
+  .hero .copy span{font-size:14px}
+  .logo span{font-size:15px}
+  section{padding:70px 16px 10px}
+  .two,.two.wide-right,.contact-grid{grid-template-columns:1fr}
+  .box,.card{padding:24px 20px}
+  .contact{padding:28px 20px}
+  .contact-grid > div + div{margin-top:30px}
+  .access li{grid-template-columns:1fr auto}
+  .access .rail{grid-column:1 / -1}
+  .kv{grid-template-columns:1fr}
+  .kv dt{border-bottom:0;padding:12px 4px 0;font-size:13px}
+  .kv dd{padding:2px 4px 12px}
+  .flow li{padding:16px 16px 16px 70px}
+  .flow li::before{left:16px;width:36px;height:36px}
+  .flow li:not(:last-child)::after{left:33px}
+  .tel{font-size:30px}
+  .btn{align-self:stretch;justify-content:center;text-align:center;padding:10px 14px;font-size:13px;letter-spacing:.04em}
+  .btn.outline{display:flex}
+  body{letter-spacing:.06em}
+}
+</style>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="障がい児・者相談支援センター「いまじん」">
+<meta property="og:title" content="障がい児・者相談支援センター「いまじん」（京都市伏見区）｜社会福祉法人 世光福祉会">
+<meta property="og:description" content="京都市伏見区（醍醐支所管内を除く）の相談支援事業所です。障害福祉サービスを使うための計画相談支援・障害児相談支援のほか、地域生活支援拠点等のコーディネート事業・一人暮らし体験等事業を京都市から受託しています。社会福祉法人 世光福祉会。">
+<link rel="canonical" href="https://soudan-imagine.bethesda.jp/">
+<meta property="og:url" content="https://soudan-imagine.bethesda.jp/">
+<meta property="og:image" content="https://soudan-imagine.bethesda.jp/images/hero.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"障がい児・者相談支援センター「いまじん」","description":"京都市伏見区（醍醐支所管内を除く）の相談支援事業所です。障害福祉サービスを使うための計画相談支援・障害児相談支援のほか、地域生活支援拠点等のコーディネート事業・一人暮らし体験等事業を京都市から受託しています。社会福祉法人 世光福祉会。","telephone":"+81-75-585-3217","faxNumber":"+81-75-585-3218","address":{"@type":"PostalAddress","postalCode":"612-8034","addressRegion":"京都府","addressLocality":"京都市伏見区","streetAddress":"桃山町泰長老175番 シャルム世光101号室","addressCountry":"JP"},"areaServed":"京都市伏見区（醍醐支所管内を除く）","parentOrganization":{"@type":"Organization","name":"社会福祉法人 世光福祉会","url":"https://bethesda.jp/"},"url":"https://soudan-imagine.bethesda.jp/","image":"https://soudan-imagine.bethesda.jp/images/hero.webp"}</script>
+</head>
+<body>
+
+<header>
+  <div class="head-in">
+    <a class="logo" href="#top">
+      <small>社会福祉法人 世光福祉会</small>
+      <span><span class="nb">障がい児・者相談支援センター</span><span class="nb">「いまじん」</span></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnav">MENU</button>
+    <nav id="gnav">
+      <ul>
+        <li><a href="#about">「いまじん」について</a></li>
+        <li><a href="#keikaku">計画相談とは</a></li>
+        <li><a href="#flow">ご利用までの流れ</a></li>
+        <li><a href="#jutaku">京都市の受託事業</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="hero-in">
+      <p class="sub">障がい児・者相談支援センター</p>
+      <h1>「いまじん」</h1>
+      <div class="copy">
+        <span>暮らしのこと、サポートのこと。</span>
+        <span>伏見の地域で、いっしょに考えます。</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-title"><span class="en">About</span><h2>「いまじん」について</h2></div>
+      <p class="lead">「いまじん」は、障がいのある方やそのご家族が、地域で自分らしく暮らしていけるよう相談に乗り、福祉サービスの利用計画づくり等をお手伝いする相談支援事業所です。</p>
+      <div class="two wide-right">
+        <div class="box">
+          <h3>対象の地域</h3>
+          <p class="area">京都市 伏見区</p>
+          <p style="text-align:center;margin:0 0 22px">（醍醐支所管内を除く）</p>
+          <h3>対象の方</h3>
+          <p style="margin:0">身体・知的・精神に障がいのある方、発達障がいのある方、難病のある方、障がいのあるお子さまとそのご家族</p>
+        </div>
+        <div class="box">
+          <h3>事業所の概要</h3>
+          <dl class="kv">
+            <dt>事業所名</dt><dd><span class="nb">障がい児・者相談支援センター</span><span class="nb">「いまじん」</span></dd>
+            <dt>運営</dt><dd>社会福祉法人 世光福祉会</dd>
+            <dt>相談支援事業</dt><dd>指定特定相談支援（計画相談支援）<br>指定一般相談支援（地域移行支援・地域定着支援）<br>指定障害児相談支援</dd>
+            <dt>京都市受託事業</dt><dd>地域生活継続・地域移行のためのコーディネート事業<br>一人暮らし体験等事業</dd>
+            <dt>営業時間</dt><dd>計画相談・障害児相談<br>平日 9:30〜16:30<br>コーディネート事業<br>平日 9:00〜18:00<br>（土・日・祝日・年末年始は休み）</dd>
+            <dt>事業所番号</dt><dd>2630982003（計画相談・地域相談）<br>2670900444（障害児相談）</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="keikaku">
+    <div class="wrap">
+      <div class="sec-title"><span class="en">Support</span><h2>計画相談とは</h2></div>
+      <p class="lead">障害福祉サービスを使うときに必要な「サービス等利用計画」を、ご本人・ご家族・関係者とともに考えて作るお手伝いをします。</p>
+      <div class="two">
+        <div class="box">
+          <h3>計画相談支援（18歳以上の方）</h3>
+          <p>ご本人の希望や暮らしの様子をうかがい、どのサービスをどのくらい使うかをまとめた「サービス等利用計画」を作ります。サービスが始まってからも定期的にお会いし（モニタリング）、計画が合っているかを確かめ、必要に応じて見直します。</p>
+        </div>
+        <div class="box">
+          <h3>児童（障害児）相談支援（18歳未満の方）</h3>
+          <p>児童発達支援や放課後等デイサービスなどを使うときの「児童（障害児）支援利用計画」を作ります。児童の方の成長に合わせて、保護者の方といっしょに定期的に見直します。</p>
+        </div>
+      </div>
+      <div class="box" style="margin-top:24px">
+        <h3>こんなときにご相談ください</h3>
+        <ul class="dots" style="margin:0">
+          <li>ヘルパーやデイサービスなど、福祉サービスを使ってみたいけれど、何から始めればいいかわからない</li>
+          <li>区役所で「サービス等利用計画（児童（障害児）支援利用計画）が必要」と言われた</li>
+          <li>自分で作っている計画（セルフプラン）を、相談支援事業所に頼みたい</li>
+          <li>今使っているサービスが暮らしに合わなくなってきた</li>
+          <li>学校の卒業後や、親が高齢になったあとの暮らしが心配</li>
+          <li>入所施設や病院を出て、地域で暮らしたい・一人暮らしをしてみたい</li>
+        </ul>
+      </div>
+      <div class="box" style="margin-top:24px">
+        <h3>ご利用にあたって</h3>
+        <ul class="dots" style="margin:0">
+          <li><b>費用はかかりません。</b>計画相談・児童（障害児）相談の利用に、ご本人・ご家族の自己負担はありません。</li>
+          <li><b>秘密は守ります。</b>ご相談の内容や個人の情報は、ご本人の同意なく外にもらすことはありません。</li>
+          <li><b>来所の前にご連絡ください。</b>相談支援専門員はご自宅や事業所への訪問で外出していることが多いため、事務所にお越しの際は、事前にお電話で日時をご予約ください。</li>
+          <li><b>受付の状況はお問い合わせください。</b>担当できる人数に限りがあるため、新しいご依頼をすぐにお受けできないことがあります。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow">
+    <div class="wrap">
+      <div class="sec-title"><span class="en">Flow</span><h2>ご利用までの流れ</h2></div>
+      <ol class="flow">
+        <li><b>お問い合わせ</b>お電話・ファックス等でご連絡ください。区役所・支所の窓口や、既に利用している事業所など関係者からのご紹介でもかまいません。</li>
+        <li><b>面談（アセスメント）</b>相談支援専門員がご自宅などにうかがい、暮らしの様子やご希望をお聞きします。<small>（契約もこのときに行います）</small></li>
+        <li><b>計画案の作成・提出</b>「サービス等利用計画案」を作り、ご本人・ご家族に確認の上、区役所・支所に提出します。</li>
+        <li><b>支給決定</b>区役所・支所が、使えるサービスの種類や量を決めます。</li>
+        <li><b>サービス担当者会議</b>サービスを提供する事業所などと集まり、計画の内容を確かめて計画（確定版）を作ります。</li>
+        <li><b>サービスの利用開始</b>計画にそってサービスを使いはじめます。</li>
+        <li><b>モニタリング（定期的な見直し）</b>定期的にお会いして、困りごとがないか、計画が合っているかを確かめます。</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="jutaku">
+    <div class="wrap">
+      <div class="sec-title"><span class="en">Projects</span><h2>京都市から受託している事業</h2></div>
+      <p class="lead">障がいのある方が住み慣れた地域で安心して暮らし続けられるよう、京都市は「地域生活支援拠点等」のモデル整備事業を進めています。「いまじん」は、南部圏域（醍醐支所管内を除く伏見区）で次の2つの事業を京都市から受託しています。</p>
+      <div class="two">
+        <div class="card">
+          <span class="tag">地域生活支援拠点等</span>
+          <h3>地域生活継続・地域移行のためのコーディネート事業</h3>
+          <p>「地域生活継続・地域移行コーディネーター」が、ご本人を支える支援チーム（相談支援事業所やサービス事業所など）とともに支えます。</p>
+          <ul class="dots">
+            <li>緊急時に備えた支援体制づくりへの助言</li>
+            <li>「緊急時対応プラン」の作成への助言・協同作成</li>
+            <li>入所施設や病院から地域の暮らしへ移るための、施設職員などへの働きかけ・関係機関との連携</li>
+            <li>一人暮らし体験のプログラムづくりへの助言と、体験後のふり返り</li>
+          </ul>
+          <p class="small">※主に支援者をサポートする事業です。緊急時の駆けつけなど、コーディネーターが直接対応するものではありません。<br>
+          ※ご利用には、ご本人の同意（事業利用同意書）が必要です。なるべく支援者を通じてご相談ください。</p>
+        </div>
+        <div class="card">
+          <span class="tag">地域生活支援拠点等</span>
+          <h3>一人暮らし体験等事業</h3>
+          <p>親元からの独立や、入所施設・病院からの退所・退院を考えている方が、体験用のお部屋（近鉄向島駅から徒歩10分程の一軒家）で一人暮らしや支援者等との宿泊を試せる事業です。</p>
+          <ul class="dots">
+            <li>ご本人・ご家族の思いをもとに、目標や過ごし方を「一人暮らし体験プログラム」にまとめてから体験します</li>
+            <li>体験中も、ヘルパーなどの支援が受けられます</li>
+            <li>利用は1人あたり4月～3月の間で30泊まで</li>
+            <li>体験のあとは支援チームといっしょにふり返り、これからの暮らしを考えます</li>
+          </ul>
+          <div class="room">
+            <p>体験用のお部屋の様子を、間取り図と写真でご覧いただけます。</p>
+            <a class="btn" href="https://imagine-support.github.io/taikenshitsu-online-viewing/" target="_blank" rel="noopener">体験室オンライン内覧ページへ</a>
+          </div>
+        </div>
+      </div>
+      <p class="small center-note" style="margin-top:24px">このほか、緊急時介護人派遣事業など、拠点等の制度もあわせて使えます。くわしくは京都市のページをご覧ください。</p>
+      <p style="text-align:center;margin-top:8px"><a class="btn outline" style="align-self:center" href="https://www.city.kyoto.lg.jp/hokenfukushi/page/0000332919.html" target="_blank" rel="noopener">京都市「地域生活支援拠点等」のページ</a></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-title"><span class="en">Contact</span><h2>お問い合わせ</h2></div>
+      <div class="contact">
+        <p class="contact-name"><span class="nb">障がい児・者相談支援センター</span><span class="nb">「いまじん」</span></p>
+        <div class="contact-grid">
+          <div>
+            <h3>お電話・FAX</h3>
+            <a class="tel" href="tel:0755853217" target="_top">075-585-3217</a>
+            <p class="line"><span>FAX</span>075-585-3218</p>
+            <dl class="hours">
+              <dt>計画相談・障害児相談</dt><dd>平日 9:30〜16:30</dd>
+              <dt>コーディネート事業</dt><dd>平日 9:00〜18:00</dd>
+              <dd class="off">土・日・祝日・年末年始はお休みです</dd>
+            </dl>
+          </div>
+          <div>
+            <h3>所在地・アクセス</h3>
+            <p class="addr">〒612-8034<br>京都府京都市伏見区桃山町泰長老175番<br>シャルム世光 101号室</p>
+            <ul class="access">
+              <li><span class="rail">京阪宇治線</span><span>観月橋駅</span><span class="walk">徒歩約4分</span></li>
+              <li><span class="rail">JR奈良線</span><span>桃山駅</span><span class="walk">徒歩約7分</span></li>
+              <li><span class="rail">近鉄京都線</span><span>桃山御陵前駅</span><span class="walk">徒歩約9分</span></li>
+              <li><span class="rail">京阪本線</span><span>伏見桃山駅</span><span class="walk">徒歩約10分</span></li>
+            </ul>
+            <ul class="notes">
+              <li>駐車スペースには限りがあります。公共交通機関か、お近くのコインパーキングをご利用ください。</li>
+              <li>事務所にお越しの際は、事前にお電話でご予約ください。</li>
+            </ul>
+          </div>
+        </div>
+        <iframe class="map" title="「いまじん」の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA%E6%A1%83%E5%B1%B1%E7%94%BA%E6%B3%B0%E9%95%B7%E8%80%81175&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="org">社会福祉法人 世光福祉会</div>
+  <a href="https://bethesda.jp/" target="_blank" rel="noopener">ベテスダの家／イマジン（bethesda.jp）</a><br>
+  © 2026 <span class="nb">障がい児・者相談支援センター</span><span class="nb">「いまじん」</span>
+</footer>
+
+
+<a class="to-top" href="#top" aria-label="ページの先頭へ">TOP</a>
+
+<script>
+  const btn=document.querySelector('.menu-btn'),nav=document.getElementById('gnav');
+  btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded',false)}));
+</script>
+</body>
+</html>
